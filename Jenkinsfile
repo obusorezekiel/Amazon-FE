@@ -59,8 +59,8 @@ pipeline {
                 script{
                    withDockerRegistry(credentialsId: 'docker', toolName: 'docker'){
                        sh "docker build -t amazon ."
-                       sh "docker tag amazon obusorezekiel/amazon:latest "
-                       sh "docker push obusorezekiel/amazon:latest "
+                       sh "docker tag amazon obusorezekiel/amazon:latest"
+                       sh "docker push obusorezekiel/amazon:latest"
                     }
                 }
             }
